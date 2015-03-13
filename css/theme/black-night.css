@@ -1,12 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:500,700,500italic,700italic);
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:700); */
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:500,700,500italic,700italic); */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family:'Open Sans';
+    src: url('OpenSans-Regular.ttf');
+}
+
 body {
     background: #222;
     background-color: #222;
 }
 
 .reveal {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Open Sans';
     font-size: 32px;
     font-weight: normal;
     color: #eee;
