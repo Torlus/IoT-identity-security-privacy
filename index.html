@@ -118,7 +118,7 @@
                 </p>
                 <h2 class="fragment">SSL/TLS</h2>
                 <h2 class="fragment">DNS</h2>
-                <p class="fragment"><small>...and to some extent: IPv4, TCP, IPv6. More on this later...</small></p>
+                <p class="fragment"><small>...and to some extent: IPv4, TCP. And IPv6. More on this later...</small></p>
             </section>
 
             <section>
@@ -143,9 +143,10 @@
                 <h3 class="fragment"><em>Cryptography</em></h3>
                 <p>
                   <ul>
-                    <li class="fragment">Asymmetric cryptography.</li>
+                    <li class="fragment">Asymmetric cryptography preferred.</li>
                     <li class="fragment">Strong algorithms.</li>
                     <li class="fragment">Large cryptographic keys sizes.</li>
+                    <li class="fragment">"True" Random Number Generation</li>
                   </ul>
                 </p>
                 <h3 class="fragment"><em>Good practices</em></h3>
@@ -153,9 +154,48 @@
                   <ul>
                     <li class="fragment">Strong passwords.</li>
                     <li class="fragment">Multi-factor authentication.</li>
+                    <li class="fragment">Revocable Trust.</li>
                   </ul>
                 </p>
+            </section>
 
+            <section>
+                <h3><em>Security</em></h3>
+                <hr />
+                <h3>In practice</h3>
+                <p>Let's compare two different security strategies</p>
+                <table>
+                  <tr class="fragment">
+                    <th><h4><em>Topic</em></h4></th>
+                    <th><h4>Online services</h4></th>
+                    <th><h4>Payment card</h4></th>
+                  <tr>
+                  <tr class="fragment">
+                    <td><em>Passwords</em></td>
+                    <td>8+ characters alpha, num, special</td>
+                    <td>4 digits PIN code</td>
+                  </tr>
+                  <tr class="fragment">
+                    <td><em>Cryptography</em></td>
+                    <td>Asymmetric</td>
+                    <td>Symmetric</td>
+                  </tr>
+                  <tr class="fragment">
+                    <td><em>Algorithms</em></td>
+                    <td>RSA</td>
+                    <td>DES (2TDES)</td>
+                  </tr>
+                  <tr class="fragment">
+                    <td><em>Key sizes</em></td>
+                    <td>2048, 4096</td>
+                    <td>112 (2 x 56)</td>
+                  </tr>
+                  <tr class="fragment">
+                    <td><h4>Leakage Impact</h4></td>
+                    <td class="fragment">Embarassing party pictures leakage</td>
+                    <td class="fragment"><strong>Bankrupcy, for you and your whole family</strong></td>
+                  </tr>
+                </table>
             </section>
 
             <!--section>
