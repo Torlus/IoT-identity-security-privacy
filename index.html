@@ -55,88 +55,44 @@
                 </p>
             </section>
 
-            <section>
-                <h3><em>OLD</em> is <em>NEW</em> again.</h3>
-                <hr />
-                <img data-src="res/c64.png" alt="c64" height="300px" />
-                <h2 class="fragment"><a href="http://www.contiki-os.org/">Contiki</a></h2>
-                <p>
-                    <ul class="fragment">
-                        <li><em>THEN (2002):</em> connecting old hardware to Internet.</li>
-                        <li><em>NOW:</em> a complete OS for the IoT: 6LoWPAN, RPL, CoAP.</li>
-                    </ul>
-                </p>
-            </section>
 
             <section>
-                <h3><em>OLD</em> is <em>NEW</em> again.</h3>
+                <h3><em>Identity, Security and Privacy</em></h3>
                 <hr />
-                <h3>Hardware-wise</h3>
-                <p>
-                <ul>
-                    <li>Processors: from <em>GHz</em> to <em>MHz</em>.</li>
-                    <li>Storage: from <em>GB</em> to <em>MB</em>, <em>KB</em>.</li>
-                    <li>Networking: from <em>Mb</em> to <em>Kb</em>.</li>
-                </ul>
-                </p>
-                <p>
-                <h3>Software-wise</h3>
-                <ul>
-                    <li><a href="http://xmpp.org/">XMPP</a>: 1999 (Jabber).</li>
-                    <li><a href="http://mqtt.org/">MQTT</a>: 1999.</li>
-                    <li><a href="http://www.amqp.org/">AMQP</a>: 2003.</li>
-                </ul>
-                </p>
-            </section>
-
-            <section>
-                <h3><em>OLD</em> is <em>NEW</em> again.</h3>
-                <hr />
-                <img data-src="res/bttf.jpg" alt="bttf" height="500px" />
-            </section>
-
-            <section>
-                <h3>State of the art.</h3>
-                <hr />
-                <h3><em>Standards and protocols</em></h3>
+                <h4>State of the art</h4>
                 <p>
                   <ul>
-                    <li class="fragment">Standards that (surprisingly) still work:
-                      <em class="fragment">SMTP, </em>
-                      <em class="fragment">HTTP...</em>
+                    <li><em>Identity</em> and <em>Privacy</em> cannot be ensured without <em>Security</em>.</li>
+                    <li>Many security-related services rely on <em>Trust</em>: <strong>DNS, SSL/TLS</strong>.</li>
+                    <li>For these services, a <em>Hierarchical Trust Model</em> is used.</li>
+                  </ul>
+                </p>
+                <h4>Weaknesses and concerns</h4>
+                <p>
+                  <ul>
+                    <li>Threats on <strong>DNS</strong>:
+                      <ul>
+                        <li><a href="http://en.wikipedia.org/wiki/Distributed_denial_of_service_attacks_on_root_nameservers">DDoS on root servers (2002, 2007)</a>.</li>
+                        <li><a href="http://bcn.boulder.co.us/~neal/ietf/verisign-abuse.html">Verisign (2003)</a>, ISPs and governements abuses.</li>
+                        <li><a href="http://www.sans.org/reading-room/whitepapers/dns/security-issues-dns-1069">Protocol weakness</a>: spoofing, cache poisoning...</li>
+                      </ul>
                     </li>
-                    <li class="fragment">Standards that didn't work so well:
-                      <em class="fragment">FTP, </em>
-                      <em class="fragment">POP3, IMAP...</em>
-                    </li>
-                    <li class="fragment">The latter have been duc[kt]-taped with <em>SSL/TLS</em>:
-                      POP3S, IMAPS, FTPS...
-                    </li>
-                    <li class="fragment">Finally, some <em>standards have gained unexpected attention</em> lately, as they are <em>failing</em>:
+                    <li>Issues with <strong>SSL/TLS</strong>:
+                      <ul>
+                        <li>Implementation issues: <a href="http://heartbleed.com/">Heartbleed</a>, <a href="https://www.openssl.org/~bodo/ssl-poodle.pdf">Poodle</a>.</li>
+                        <li>Abuse: <a href="http://support.lenovo.com/en/product_security/superfish">Lenovo's SuperFish</a>.</li>
+                      </ul>
                     </li>
                   </ul>
                 </p>
-                <h2 class="fragment">SSL/TLS</h2>
-                <h2 class="fragment">DNS</h2>
-                <p class="fragment"><small>...and to some extent: IPv4, TCP. And IPv6. More on this later...</small></p>
             </section>
 
-            <section>
-                <h3>State of the art.</h3>
-                <hr />
-                <h3><em>Why all this failure?</em></h3>
-                <p>
-                  <ul>
-                    <li class="fragment">Security wasn't a main concern at the time of their design: <em>FTP, POP3...</em></li>
-                    <li class="fragment">Legacy code, algorithms, standards.<em>(Open|Libre)SSL/TLS</em></li>
-                    <li class="fragment">"If it has worked once, you won't get rid of it". <em><s>php, javascript</s> SMTP.</em></li>
-                  </ul>
-                </p>
-                <h3 class="fragment">Fortunately, new IoT standards are built with security in mind.</h3>
-                <p class="fragment"><small>...Yes, I'm pretty sure they are!...</small></p>
-            </section>
+            <!--section>
+              <h1><em>TRUST</em> < <strong>GREED</strong></h1>
+              <img data-src="res/greed.jpg" height="500" />
+            </section-->
 
-            <section>
+            <!--section>
                 <h3><em>Security</em></h3>
                 <hr />
                 <h3>What are the roots of IT security?</h3>
@@ -146,7 +102,6 @@
                     <li class="fragment">Asymmetric cryptography preferred.</li>
                     <li class="fragment">Strong algorithms.</li>
                     <li class="fragment">Large cryptographic keys sizes.</li>
-                    <li class="fragment">"True" Random Number Generation</li>
                   </ul>
                 </p>
                 <h3 class="fragment"><em>Good practices</em></h3>
@@ -154,7 +109,8 @@
                   <ul>
                     <li class="fragment">Strong passwords.</li>
                     <li class="fragment">Multi-factor authentication.</li>
-                    <li class="fragment">Revocable Trust.</li>
+                    <li class="fragment"><em>Cryptographic key management.</em></li>
+                    <li class="fragment"><em>Cryptographic key erosion prevention.</em></li>
                   </ul>
                 </p>
             </section>
@@ -168,7 +124,7 @@
                   <tr class="fragment">
                     <th><h4><em>Topic</em></h4></th>
                     <th><h4>Online services</h4></th>
-                    <th><h4>Payment card</h4></th>
+                    <th><h4>Payment cards</h4></th>
                   <tr>
                   <tr class="fragment">
                     <td><em>Passwords</em></td>
@@ -182,7 +138,7 @@
                   </tr>
                   <tr class="fragment">
                     <td><em>Algorithms</em></td>
-                    <td>RSA</td>
+                    <td>RSA, AES</td>
                     <td>DES (2TDES)</td>
                   </tr>
                   <tr class="fragment">
@@ -191,12 +147,32 @@
                     <td>112 (2 x 56)</td>
                   </tr>
                   <tr class="fragment">
-                    <td><h4>Leakage Impact</h4></td>
+                    <td><h4>Failure Impact</h4></td>
                     <td class="fragment">Embarassing party pictures leakage</td>
                     <td class="fragment"><strong>Bankrupcy, for you and your whole family</strong></td>
                   </tr>
                 </table>
-            </section>
+            </section-->
+
+            <!--section>
+                <h3><em>Security</em></h3>
+                <hr />
+                <h3>Wait... what? Is EFT security <strong>that</strong> bad???</h3>
+                <p>
+                  <h4 class="fragment">Fortunately not:</h4>
+                  <ul>
+                    <li class="fragment">Strong <strong>key management</strong> scheme:
+                      <p class="fragment"><em>LMK</em> stored in HSM/Secure Elements,</p>
+                      <p class="fragment"><em>KEK</em> used for transport.</p>
+                      <p class="fragment">Keys are splitted into two or more parts.</p>
+                    </li>
+                    <li class="fragment"><strong>Key derivation</strong> schemes<em> (DUKPT) </em>:
+                      <p class="fragment"><em>BDK, IPEK</em> are never exposed,</p>
+                      <p class="fragment"><em>Session Keys</em> are used only <em>once</em> (KSN).</p>
+                    </li>
+                  </ul>
+                </p>
+            </section-->
 
             <!--section>
                 <section>
