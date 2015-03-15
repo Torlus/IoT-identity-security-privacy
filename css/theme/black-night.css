@@ -186,6 +186,7 @@ body {
 }
 
 .reveal code {
+    color: #99f;
     font-family: monospace;
 }
 
