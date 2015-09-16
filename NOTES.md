@@ -113,3 +113,8 @@ The Blockchain is used for handle registration.
 Then, the remaining parts of the system belong to BitTorrent family of protocols.
 A Distributed Hash Table mechanism like the one used in the Kademlia network, is used for replicated storage of user information.
 The post themselves are stored in BitTorrent swarms.
+
+# After-talk
+
+- Homomorphic encryption
+- Stellar.org
